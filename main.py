@@ -13,12 +13,12 @@ def get_quote():
 
 while True : 
     
-    inp = input("do you want a random quote ?(y/n)")
+    inp = input("do you want a random quote ?(y/n)").strip().lower()
     if inp == "y" :
         print(get_quote())
     elif inp == "n" :
         break
     else : 
         print("Invalid input")
-        break
+                
 
